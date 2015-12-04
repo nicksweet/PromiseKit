@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   abort("No version detected") if $1.nil?
   s.version = $1
 
-  s.source = { :git => "https://github.com/nicksweet/#{s.name}.git", :tag => s.version }
+  s.source = { :git => "https://github.com/nicksweet/PromiseKitTVOS.git" }
   s.license = { :type => 'MIT', :text => '@see README' }
   s.summary = 'A delightful Promises implementation for iOS and OS X.'
   s.homepage = 'http://promisekit.org'
