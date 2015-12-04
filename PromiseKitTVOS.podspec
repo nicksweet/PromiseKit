@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name = "PromiseKitTVOS"
 
-  `xcodebuild -project PromiseKitTVOS.xcodeproj -showBuildSettings` =~ /CURRENT_PROJECT_VERSION = 1.0
+  `xcodebuild -project PromiseKitTVOS.xcodeproj -showBuildSettings` =~ /CURRENT_PROJECT_VERSION = ((\d\.)+\d)/
   abort("No version detected") if $1.nil?
   s.version = $1
 
-  s.source = { :git => "https://github.com/nicksweet/PromiseKitTVOS.git" }
+  s.source = { :git => "https://github.com/nicksweet/#{s.name}.git", :tag => s.version }
   s.license = { :type => 'MIT', :text => '@see README' }
   s.summary = 'A delightful Promises implementation for iOS and OS X.'
   s.homepage = 'http://promisekit.org'
