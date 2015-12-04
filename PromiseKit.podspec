@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = "PromiseKitTVOS"
 
-  `xcodebuild -project PromiseKitTVOS.xcodeproj -showBuildSettings` =~ /CURRENT_PROJECT_VERSION = ((\d\.)+\d)/
+  `xcodebuild -project PromiseKitTVOS.xcodeproj -showBuildSettings` =~ /CURRENT_PROJECT_VERSION = 1.0
   abort("No version detected") if $1.nil?
   s.version = $1
 
