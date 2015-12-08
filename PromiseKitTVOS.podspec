@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name = "PromiseKitTVOS"
+  s.name = "PromiseKit"
 
-  `xcodebuild -project PromiseKitTVOS.xcodeproj -showBuildSettings`
+  `xcodebuild -project PromiseKit.xcodeproj -showBuildSettings`
   s.version = $1
 
   s.source = { :git => "https://github.com/nicksweet/#{s.name}.git", :tag => s.version }
@@ -23,25 +23,25 @@ Pod::Spec.new do |s|
 
   s.subspec 'Accounts' do |ss|
     ss.ios.source_files = ss.osx.source_files = 'Categories/Accounts/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'Accounts'
   end
 
   s.subspec 'AddressBook' do |ss|
     ss.ios.source_files = 'Categories/AddressBook/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.ios.frameworks = 'AddressBook'
   end
 
   s.subspec 'AssetsLibrary' do |ss|
     ss.ios.source_files = 'Categories/AssetsLibrary/*'
-    ss.dependency 'PromiseKitTVOS/UIKit'
+    ss.dependency 'PromiseKit/UIKit'
     ss.ios.frameworks = 'AssetsLibrary'
   end
 
   s.subspec 'AVFoundation' do |ss|
     ss.ios.source_files = 'Categories/AVFoundation/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.ios.frameworks = 'AVFoundation'
   end
 
@@ -53,7 +53,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'CloudKit' do |ss|
     ss.source_files = 'Categories/CloudKit/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'CloudKit'
     ss.ios.deployment_target = '8.0'
     ss.osx.deployment_target = '10.10'
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = 'Categories/CoreLocation/*'
     ss.osx.source_files = 'Categories/CoreLocation/*'
     ss.watchos.source_files = Dir['*/CLGeocoder*']
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'CoreLocation'
   end
   
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
     ss.ios.source_files = Dir['Categories/Foundation/*'] - Dir['Categories/Foundation/NSTask*']
     ss.osx.source_files = 'Categories/Foundation/*'
     ss.watchos.source_files = Dir['Categories/Foundation/*'] - Dir['Categories/Foundation/NSTask*', 'Categories/Foundation/NSURL*']
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'Foundation'
   end
   
@@ -88,58 +88,58 @@ Pod::Spec.new do |s|
     ss.ios.source_files = Dir['Categories/Foundation/*'] - Dir['Categories/Foundation/NSTask*', 'Categories/Foundation/NSURL*']
     ss.osx.source_files = Dir['Categories/Foundation/*'] - Dir['Categories/Foundation/NSURL*']
     ss.watchos.source_files = Dir['Categories/Foundation/*'] - Dir['Categories/Foundation/NSTask*', 'Categories/Foundation/NSURL*']
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'Foundation'
   end
 
   s.subspec 'MapKit' do |ss|
     ss.ios.source_files = 'Categories/MapKit/*'
     ss.osx.source_files = 'Categories/MapKit/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'MapKit'
   end
 
   s.subspec 'MessageUI' do |ss|
     ss.ios.source_files = 'Categories/MessageUI/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.ios.frameworks = 'MessageUI'
   end
 
   s.subspec 'Photos' do |ss|
     ss.ios.source_files = 'Categories/Photos/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.ios.frameworks = 'Photos'
   end
 
   s.subspec 'QuartzCore' do |ss|
     ss.ios.source_files = 'Categories/QuartzCore/*'
 	  ss.osx.source_files = 'Categories/QuartzCore/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'QuartzCore'
   end
 
   s.subspec 'Social' do |ss|
     ss.ios.source_files = 'Categories/Social/*'
     ss.osx.source_files = Dir['Categories/Social/*'] - ['Categories/Social/SLComposeViewController+Promise.swift']
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'Social'
   end
 
   s.subspec 'StoreKit' do |ss|
     ss.ios.source_files = ss.osx.source_files = 'Categories/StoreKit/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'StoreKit'
   end
 
   s.subspec 'SystemConfiguration' do |ss|
     ss.ios.source_files = ss.osx.source_files = 'Categories/SystemConfiguration/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.frameworks = 'SystemConfiguration'
   end
 
   s.subspec 'UIKit' do |ss|
     ss.ios.source_files = 'Categories/UIKit/*'
-    ss.dependency 'PromiseKitTVOS/CorePromise'
+    ss.dependency 'PromiseKit/CorePromise'
     ss.ios.frameworks = 'UIKit'
   end
 
