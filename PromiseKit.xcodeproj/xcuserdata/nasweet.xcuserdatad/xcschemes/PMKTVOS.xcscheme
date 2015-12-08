@@ -14,7 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "C25287EF1C179598009952ED"
+=======
+               BlueprintIdentifier = "C25287E21C179420009952ED"
+>>>>>>> origin/master
                BuildableName = "PMKTVOS.framework"
                BlueprintName = "PMKTVOS"
                ReferencedContainer = "container:PromiseKit.xcodeproj">
@@ -45,7 +49,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "C25287EF1C179598009952ED"
+=======
+            BlueprintIdentifier = "C25287E21C179420009952ED"
+>>>>>>> origin/master
             BuildableName = "PMKTVOS.framework"
             BlueprintName = "PMKTVOS"
             ReferencedContainer = "container:PromiseKit.xcodeproj">
@@ -63,7 +71,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "C25287EF1C179598009952ED"
+=======
+            BlueprintIdentifier = "C25287E21C179420009952ED"
+>>>>>>> origin/master
             BuildableName = "PMKTVOS.framework"
             BlueprintName = "PMKTVOS"
             ReferencedContainer = "container:PromiseKit.xcodeproj">
